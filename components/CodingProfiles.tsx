@@ -37,7 +37,7 @@ const profiles = [
   {
     title: "GeeksForGeeks",
     metric: "03",
-    link: "https://auth.geeksforgeeks.org/user/Rinku_ydv_01",
+    link: "https://www.geeksforgeeks.org/profile/rinkuyadaoze0",
     containerHover: "hover:border-[#2F8D46] hover:shadow-[10px_10px_0_0_#2F8D46]",
     flareColor: "from-[#2F8D46]/15",
     textHover: "group-hover:text-[#2F8D46]",
