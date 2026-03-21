@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-money-heist-red: var(--money-heist-red);
+  --color-monster-green: var(--monster-green);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #000000;
+  --foreground: #FFFFFF;
+  --muted: #A3A3A3;
+  --accent: #333333;
+  --money-heist-red: #E50000;
+  --monster-green: #55FF00;
+}
+
+* {
+  cursor: default;
+}
+
+a, button, [role="button"] {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection highlight uses Monster Green */
+::selection {
+  background: rgba(85, 255, 0, 0.3);
+  color: #FFFFFF;
+}
+
+/* Tactical Topo Base */
+.topo-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='0.5' opacity='0.02'%3E%3Cellipse cx='200' cy='200' rx='180' ry='120'/%3E%3Cellipse cx='200' cy='200' rx='150' ry='100'/%3E%3Cellipse cx='200' cy='200' rx='120' ry='80'/%3E%3Cellipse cx='200' cy='200' rx='90' ry='60'/%3E%3Cellipse cx='200' cy='200' rx='60' ry='40'/%3E%3Cellipse cx='200' cy='200' rx='30' ry='20'/%3E%3Cline x1='0' y1='50' x2='400' y2='50'/%3E%3Cline x1='0' y1='130' x2='400' y2='130'/%3E%3Cline x1='0' y1='210' x2='400' y2='210'/%3E%3Cline x1='0' y1='290' x2='400' y2='290'/%3E%3Cline x1='0' y1='370' x2='400' y2='370'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Vault Glass container - heavy dark glass */
+.vault-glass {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Neon Glow Accents */
+.neon-hover-red:hover {
+  border-color: var(--money-heist-red);
+  box-shadow: 0 0 25px rgba(229, 0, 0, 0.4), inset 0 0 10px rgba(229, 0, 0, 0.1);
+}
+
+.neon-hover-green:hover {
+  border-color: var(--monster-green);
+  box-shadow: 0 0 25px rgba(85, 255, 0, 0.4), inset 0 0 10px rgba(85, 255, 0, 0.1);
+}
+
+/* Monospace text utility */
+.font-tactical {
+  font-family: var(--font-mono), 'Roboto Mono', monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--monster-green);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222222 #000000;
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
