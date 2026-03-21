@@ -47,8 +47,8 @@ export const Footer = () => {
               <p className="font-mono text-[#666] text-xs font-bold tracking-widest uppercase mb-4">
                 GIVE A RING
               </p>
-              <a href="tel:+9174579409345" className="text-[#CCC] hover:text-white transition-colors text-lg md:text-xl font-medium">
-                +91 74579 409345
+              <a href="tel:+917579409345" className="text-[#CCC] hover:text-white transition-colors text-lg md:text-xl font-medium">
+                +91 75794 09345
               </a>
             </div>
           </div>
