@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 export const Footer = () => {
@@ -65,6 +65,9 @@ export const Footer = () => {
                 </a>
                 <a href="https://github.com/Rinkuydv01" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-[#A3A3A3] hover:text-white hover:border-white transition-all duration-300 group">
                   <FaGithub className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                </a>
+                <a href="https://instagram.com/raoxrinku" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-[#A3A3A3] hover:text-white hover:border-white transition-all duration-300 group">
+                  <FaInstagram className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a href="mailto:rxo.rinku@gmail.com" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-[#A3A3A3] hover:text-white hover:border-white transition-all duration-300 group">
                   <FiMail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
