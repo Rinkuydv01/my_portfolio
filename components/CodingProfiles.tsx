@@ -20,7 +20,7 @@ const profiles = [
   {
     title: "CODE360",
     metric: "02",
-    link: "https://www.naukri.com/code360/profile/Rinku_ydv_01",
+    link: "https://www.naukri.com/code360/profile/Rinkuydv",
     containerHover: "hover:border-[#F05A28] hover:shadow-[10px_10px_0_0_#F05A28]",
     flareColor: "from-[#F05A28]/15",
     textHover: "group-hover:text-[#F05A28]",
