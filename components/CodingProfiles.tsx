@@ -11,6 +11,7 @@ const profiles = [
     containerHover: "hover:border-[#FFA116] hover:shadow-[10px_10px_0_0_#FFA116]",
     flareColor: "from-[#FFA116]/15",
     textHover: "group-hover:text-[#FFA116]",
+    stats: "Solved 500+ problems",
     icon: (
       <div className="w-12 h-12 mb-6 bg-[#080808] border border-white/5 rounded-xl flex items-center justify-center group-hover:border-[#FFA116]/30 transition-all duration-500">
         <SiLeetcode className="w-7 h-7 text-[#FFA116] drop-shadow-[0_0_8px_rgba(255,161,22,0.4)] group-hover:drop-shadow-[0_0_15px_rgba(255,161,22,0.8)] transition-all duration-300" />
@@ -24,6 +25,7 @@ const profiles = [
     containerHover: "hover:border-[#F05A28] hover:shadow-[10px_10px_0_0_#F05A28]",
     flareColor: "from-[#F05A28]/15",
     textHover: "group-hover:text-[#F05A28]",
+    stats: "Specialist in Graph and DP",
     icon: (
       <div className="w-12 h-12 mb-6 flex items-center justify-center">
         <svg className="w-12 h-12 drop-shadow-[0_0_10px_rgba(246,108,59,0.4)] group-hover:drop-shadow-[0_0_15px_rgba(240,90,40,0.8)] transition-all duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,6 +43,7 @@ const profiles = [
     containerHover: "hover:border-[#2F8D46] hover:shadow-[10px_10px_0_0_#2F8D46]",
     flareColor: "from-[#2F8D46]/15",
     textHover: "group-hover:text-[#2F8D46]",
+    stats: "solved 40+ Graph problems",
     icon: (
       <div className="w-12 h-12 mb-6 flex items-center justify-center">
         <SiGeeksforgeeks className="w-12 h-12 text-[#2F8D46] drop-shadow-[0_0_10px_rgba(47,141,70,0.4)] group-hover:drop-shadow-[0_0_15px_rgba(47,141,70,0.8)] transition-all duration-300" />
@@ -120,12 +123,21 @@ export const CodingProfiles = () => {
               </div>
 
               <div className="relative z-10 pointer-events-none flex flex-col h-full justify-end">
-                <h4 className={`text-2xl md:text-3xl font-black text-white mb-2 tracking-tight uppercase ${item.textHover} transition-colors duration-500`}>
-                  {item.title}
-                </h4>
+                <div className="relative">
+                  <h4 className={`text-2xl md:text-3xl font-black text-white tracking-tight uppercase ${item.textHover} transition-colors duration-500`}>
+                    {item.title}
+                  </h4>
+                  {item.stats && (
+                    <div className="absolute top-full pt-1 left-0 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
+                      <span className={`text-[10px] md:text-xs font-mono tracking-widest uppercase ${item.textHover}`}>
+                        // {item.stats}
+                      </span>
+                    </div>
+                  )}
+                </div>
 
                 {/* Execute Link Bullet */}
-                <div className="mt-4 flex justify-end font-mono text-sm md:text-base border-t border-white/5 pt-6 shrink-0">
+                <div className="mt-6 md:mt-8 flex justify-end font-mono text-sm md:text-base border-t border-white/5 pt-4 shrink-0">
                   <span className={`text-gray-500 ${item.textHover} transition-colors flex items-center gap-4`}>
                     <span className="uppercase tracking-widest font-semibold">Execute Link</span>
                     {/* Sniper Bullet SVG */}
