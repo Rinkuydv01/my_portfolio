@@ -3,21 +3,21 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { 
-    category: "Languages", 
+  {
+    category: "Languages",
     items: ["C", "C++", "Python", "Java", "Kotlin"],
   },
-  { 
-    category: "Data Science & Machine Learning", 
+  {
+    category: "Data Science & Machine Learning",
     items: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-Learn", "TensorFlow"],
   },
-  { 
-    category: "Backend & Databases", 
+  {
+    category: "Backend & Databases",
     items: ["Spring", "Spring Boot", "Flask", "MySQL", "PostgreSQL"],
   },
-  { 
-    category: "Tools & Environments", 
-    items: ["Git", "GitHub", "Linux", "Google Colab", "Jupyter Notebook", "Kaggle"],
+  {
+    category: "Tools & Environments",
+    items: ["Git", "GitHub", "Linux", "Google Colab", "Android Studio", "Jupyter Notebook", "Kaggle"],
   },
 ];
 
@@ -42,7 +42,7 @@ export const Skills = () => {
                 // SYS_CAPABILITIES
               </h2>
             </div>
-            
+
             <h3 className="relative z-10 text-[10vw] md:text-[6vw] leading-[0.85] font-black tracking-tighter text-white uppercase mb-6">
               Technical <br />
               <span className="text-[#333]">/ Arsenal.</span>
@@ -53,7 +53,7 @@ export const Skills = () => {
         {/* Skill Groups */}
         <div className="space-y-14">
           {skills.map((group, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
