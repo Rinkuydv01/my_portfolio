@@ -19,6 +19,10 @@ const skills = [
     category: "Tools & Environments",
     items: ["Git", "GitHub", "Linux", "Google Colab", "Android Studio", "Jupyter Notebook", "Kaggle"],
   },
+  {
+    category: "Soft Skills",
+    items: ["Problem Solving", "Adaptability", "Goal Oriented"],
+  },
 ];
 
 export const Skills = () => {
