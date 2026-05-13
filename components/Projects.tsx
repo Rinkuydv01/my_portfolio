@@ -6,24 +6,24 @@ import { useRef } from "react";
 const projects = [
   {
     id: "01",
+    title: "RAG-Based Document QA System",
+    subtitle: "Python, FAISS, LangChain, Groq LLM",
+    description: "Developed a Retrieval-Augmented Generation (RAG) pipeline using Python and LangChain for document-based question answering. Implemented document chunking, embeddings, vector search, and LLM-based response generation to provide context-aware answers from uploaded documents.",
+    link: "https://github.com/Rinkuydv01/RAG-pipeline",
+  },
+  {
+    id: "02",
     title: "Career Path Classifier",
     subtitle: "Python, Scikit-Learn, Flask, Pandas",
     description: "Built a Machine Learning-based system to predict suitable career roles from user skill inputs. Implemented and compared multiple classification models (Random Forest, SVM, Logistic Regression), applying cross-validation and hyperparameter tuning for better accuracy.",
     link: "https://github.com/Rinkuydv01/Career-Path-Classifier",
   },
   {
-    id: "02",
+    id: "03",
     title: "Real Time System Monitor Dashboard",
     subtitle: "Python, Flask, psutil, Streamlit, SQLite",
     description: "Formulated a real-time system monitoring dashboard to continuously track and display CPU, memory, disk, and network usage statistics. Integrated efficient data logging mechanisms and threshold-based alert systems to proactively monitor performance.",
     link: "https://github.com/Rinkuydv01/Real-Time-System-Monitor-Dashboard",
-  },
-  {
-    id: "03",
-    title: "Aircraft Fleet Management System",
-    subtitle: "Oracle SQL, PL/SQL, React.js, Python",
-    description: "Engineered well-structured and normalized database schemas to efficiently manage aircraft records and maintenance logs. Designed stored procedures, triggers, and automated scheduling mechanisms to streamline maintenance tracking and ensure accurate fleet management.",
-    link: "https://github.com/Rinkuydv01/Aircraft-Fleet-Management-System",
   }
 ];
 
