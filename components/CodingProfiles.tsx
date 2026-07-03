@@ -11,7 +11,7 @@ const profiles = [
     containerHover: "hover:border-[#FFA116] hover:shadow-[10px_10px_0_0_#FFA116]",
     flareColor: "from-[#FFA116]/15",
     textHover: "group-hover:text-[#FFA116]",
-    stats: "Solved 500+ problems",
+    stats: "Solved 600+ problems",
     icon: (
       <div className="w-12 h-12 mb-6 bg-[#080808] border border-white/5 rounded-xl flex items-center justify-center group-hover:border-[#FFA116]/30 transition-all duration-500">
         <SiLeetcode className="w-7 h-7 text-[#FFA116] drop-shadow-[0_0_8px_rgba(255,161,22,0.4)] group-hover:drop-shadow-[0_0_15px_rgba(255,161,22,0.8)] transition-all duration-300" />
