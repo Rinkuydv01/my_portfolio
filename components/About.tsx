@@ -58,7 +58,7 @@ export const About = () => {
             </div>
             <div className="flex items-center gap-3 font-tactical text-[#E50000] border border-[#E50000]/30 px-6 py-3 rounded-full bg-black/60 backdrop-blur-md shadow-[0_0_15px_rgba(229,0,0,0.1)]">
               <span className="w-1.5 h-1.5 bg-[#E50000] shadow-[0_0_5px_#E50000]" />
-              CGPA: 8.34
+              CGPA: 8.38
             </div>
           </div>
         </motion.div>
