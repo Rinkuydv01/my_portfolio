@@ -6,7 +6,7 @@ import { useRef } from "react";
 const projects = [
   {
     id: "01",
-    title: "RESTful CRUD API",
+    title: "RESTful Student Records API",
     subtitle: "Java, Spring Boot, Spring Data JPA, MySQL",
     description: "Developed a RESTful Student Management System using Spring Boot and MySQL. Implemented CRUD operations, DTO-based request/response architecture, soft delete functionality, and layered architecture (Controller-Service-Repository). Integrated Spring Data JPA for database operations and tested APIs using Postman.",
     link: "https://github.com/Rinkuydv01/CRUD-Application",
